@@ -41,7 +41,9 @@ class Kernel extends HttpKernel
 
         'api' => [
             'throttle:api',
+             //for API authentication with Passport
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
+
         ],
     ];
 
