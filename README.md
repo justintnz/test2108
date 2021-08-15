@@ -3,7 +3,8 @@
 
 This code is built with Laravel 8.x  and using Passport & Sail,a Docker development environment
 Task: implement User API with authentication 
-Postman collection provided at 
+Postman collection provided at https://github.com/justintnz/test2108/blob/main/Online%20Republic.postman_collection.json
+
 ## To run this on local
 - clone the code
 - install Docker engine ( if you dont have one)
