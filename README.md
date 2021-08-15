@@ -20,20 +20,24 @@ $ ./vendor/bin/sail artisan migrate
 $ ./vendor/bin/sail artisan passport:install
 $ ./vendor/bin/sail artisan db:seed
 ```
--- NOTE artisan should be run as "./vendor/bin/sail artisan" so that laravel container can communicate with mysql container.
+NOTE:
+ 1. artisan should be run as "./vendor/bin/sail artisan" so that laravel container can communicate with mysql container.
+ 2. All test users are created with password "password"
+ 3. Admin email is admin@admin.com
+
 ## Features
 - REGISTER A USER:  [POST] {{DOMAIN}}/api/register
 - USER LOGIN: [POST] {{DOMAIN}}/api/login ( return access_token)
 - GET a USER:  [GET] {{DOMAIN}}/api/user/{{id}}
 - GET USERs with paging (optional): [GET] {{DOMAIN}}/api/user?page={{p}} (p is positive integer)
 - CREATE NEW USER:  [POST] {{DOMAIN}}/api/user  
--- required fields  'first_name','last_name','email' (unique),'phone', 'password'
--- new admin can only be created by Admin user ( with field 'is_admin' set to 1 )
+  - required fields  'first_name','last_name','email' (unique),'phone', 'password'
+  - new admin can only be created by Admin user ( with field 'is_admin' set to 1 )
 - UPDATE USER:  [PUT] {{DOMAIN}}/api/user/{{id}} 
--- optional fields  'first_name','last_name','email' (unique),'phone', 'password'
--- password can only be updated by Admin user
+  - optional fields  'first_name','last_name','email' (unique),'phone', 'password'
+  - password can only be updated by Admin user
 - DELETE USER:  [DELETE] {{DOMAIN}}/api/user/{{id}}
--- only Admin can delete user
+  - only Admin can delete user
 
 ## TESTING 
 ``` sh
