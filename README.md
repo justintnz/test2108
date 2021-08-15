@@ -18,6 +18,7 @@ $ ./vendor/bin/sail up -d
 $ ./vendor/bin/sail artisan key:generate
 $ ./vendor/bin/sail artisan migrate
 $ ./vendor/bin/sail artisan passport:install
+$ ./vendor/bin/sail artisan db:seed
 ```
 -- NOTE artisan should be run as "./vendor/bin/sail artisan" so that laravel container can communicate with mysql container.
 ## Features
