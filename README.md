@@ -27,8 +27,8 @@ $ ./vendor/bin/sail artisan db:seed
 - GET a USER:  [GET] {{DOMAIN}}/api/user/{{id}}
 - GET USERs with paging (optional): [GET] {{DOMAIN}}/api/user?page={{p}} (p is positive integer)
 - CREATE NEW USER:  [POST] {{DOMAIN}}/api/user  
-** required fields  'first_name','last_name','email' (unique),'phone', 'password'
-** new admin can only be created by Admin user ( with field 'is_admin' set to 1 )
+-- required fields  'first_name','last_name','email' (unique),'phone', 'password'
+-- new admin can only be created by Admin user ( with field 'is_admin' set to 1 )
 - UPDATE USER:  [PUT] {{DOMAIN}}/api/user/{{id}} 
 -- optional fields  'first_name','last_name','email' (unique),'phone', 'password'
 -- password can only be updated by Admin user
