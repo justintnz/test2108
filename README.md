@@ -1,12 +1,15 @@
 # API assessment 
 ## _at Online Republic_
 
-This code is built with Laravel 8.x  and using Sail,a Docker development environment
-To run this on local
+This code is built with Laravel 8.x  and using Passport & Sail,a Docker development environment
+Task: implement User API with authentication 
+Postman collection provided at 
+## To run this on local
 - clone the code
 - install Docker engine ( if you dont have one)
 - run composer install to download all require packages
-## GET Dev env. ready with Docker, 
+
+## Let's get dev env. ready with Docker, 
 move to the cloned folder and run
 ```sh
 $ php artisan sail:install
